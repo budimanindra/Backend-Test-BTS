@@ -1,0 +1,314 @@
+{
+	"info": {
+		"_postman_id": "40d95528-076e-487d-b045-dca597ecd76c",
+		"name": "BTS.ID",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sign Up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "rabudiman2",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "rabudiman2@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123123123123",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "08123456789",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "kp. bugis",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "mataram",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "indo",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "bubu",
+							"type": "text"
+						},
+						{
+							"key": "postcode",
+							"value": "321123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/api/users/signup",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sign In",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "rabudiman2@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123123123123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/api/users/signin",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new shopping",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "CreatedDate",
+							"value": "2019-08-24",
+							"type": "text"
+						},
+						{
+							"key": "Name",
+							"value": "new shopping",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/api/shopping/",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"shopping",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all shopping",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "CreatedDate",
+							"value": "2019-13-08",
+							"type": "text"
+						},
+						{
+							"key": "Name",
+							"value": "new shopping",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/api/shopping/",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"shopping",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get shopping by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "CreatedDate",
+							"value": "2019-13-08",
+							"type": "text"
+						},
+						{
+							"key": "Name",
+							"value": "new shopping",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/api/shopping/6",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"shopping",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update shopping by id",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "CreatedDate",
+							"value": "2019-13-08",
+							"type": "text"
+						},
+						{
+							"key": "Name",
+							"value": "new shopping baru",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/api/shopping/6",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"shopping",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete shopping by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "CreatedDate",
+							"value": "2019-13-08",
+							"type": "text"
+						},
+						{
+							"key": "Name",
+							"value": "new shopping baru",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/api/shopping/6",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"shopping",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "{{host}}/api/users/",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
